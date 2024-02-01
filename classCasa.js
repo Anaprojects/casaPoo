@@ -28,10 +28,4 @@ class Casa{
     }
 }
 
-    // instanciação da classe
-     const minhaCasa = new Casa("rosa","suja","fechada","aberta");
-    console.log(minhaCasa.mudarCor())
-     
-     
-
-
+module.exports = Casa;
