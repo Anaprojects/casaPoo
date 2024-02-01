@@ -8,7 +8,7 @@ class Casa{
 
     //metodo Que muda a cor
     mudarCor(){
-        console.log("casa pintada da cor desejada!😍")
+        console.log(`casa pintada da cor ${this.cor}`)
     }
     //metodo que faxina
     limpaCasa(){
@@ -30,8 +30,8 @@ class Casa{
 
     // instanciação da classe
      const minhaCasa = new Casa("rosa","suja","fechada","aberta");
-
-     console.log(minhaCasa.cor)
+    console.log(minhaCasa.mudarCor())
+     
      
 
 
