@@ -1,31 +1,18 @@
-class Casa{
-    constructor(cor, estado, janela, porta){
-        this.cor =cor;
-        this.estado = estado;
-        this.janela = janela,
-        this.porta = porta
+var Casa = /** @class */ (function () {
+    // estado: string;
+    // janela: string;
+    // porta: string;
+    function Casa(cor) {
+        this.cor = cor;
+        // this.estado = estado;
+        // this.janela = janela;
+        // this.porta = porta
     }
-
-    //metodo Que muda a cor
-    mudarCor(){
-        console.log(`casa pintada da cor ${this.cor}`)
-    }
-    //metodo que faxina
-    limpaCasa(){
-        console.log("casa limpada com sucesso!🧹")
-    }
-    //metodo que coloca lixo para fora
-    colocarLixoParaFora(){
-        console.log("lixo colocado para fora!🗑️")
-    }
-    //metodo que abre as janelas
-    abrirAsJanelas(){
-        console.log("janelas abertas🚪")
-    }
-    //metodos que abrem as portas
-    abrirPortas(){
-        console.log("janelasAbertas🪟")
-    }
-}
-
-module.exports = Casa;
+    //CRIANDO MÉTODOS//
+    Casa.prototype.mudarDeCor = function () {
+        console.log("A nova cor \u00E9 ".concat(this.cor));
+    };
+    return Casa;
+}());
+var novaCorDaCasa = new Casa("Azul");
+novaCorDaCasa.mudarDeCor();
